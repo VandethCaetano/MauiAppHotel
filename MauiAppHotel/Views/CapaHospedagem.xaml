@@ -63,11 +63,18 @@
         </Frame>
 
         <!-- Boton-->
+
         <Button Padding="10" Margin="50" BackgroundColor="{StaticResource PrimaryDark}"
-                Text="Voltar"
-                FontFamily="BebasNeue-Regular"
-                TextColor="{StaticResource Black}"
-                FontSize="20" />
+        Text="Avançar"
+        FontFamily="BebasNeue-Regular"
+        TextColor="{StaticResource Black}"
+        FontSize="20"
+        Clicked="OnNextButtonClicked" />
+
+
+     
+
+
 
     </VerticalStackLayout>
 
