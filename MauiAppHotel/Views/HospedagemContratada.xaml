@@ -5,62 +5,101 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Gray100}">
 
+    <Grid> 
+        <!-- Background fundo -->
+        <Image VerticalOptions="CenterAndExpand"
+        Source="cafe.png" 
+        Aspect="AspectFit"
+        Opacity="1" />
+        
 
-    <VerticalStackLayout VerticalOptions="CenterAndExpand">
-        <Label Text="Suite Super Luxo"
-               TextColor="{StaticResource Primary}"
-               FontFamily="Kalam"
-               FontSize="50"
-               HorizontalTextAlignment="Center"/>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Frame
-            Margin="10">
+            <!-- Hospedagem Contratada-->
+            <Frame BackgroundColor="{StaticResource Gray300}"
+            HorizontalOptions="Center" 
+            Margin="10" Padding="5" >
+
+
+                <!-- Contratação-->
+                <VerticalStackLayout HorizontalOptions="Center" Margin="1" Padding="5">
+
+                    <Label 
+                   Text="Hospedagem Contratada"
+                   FontFamily="TheWanters"
+                   FontSize="30"
+                   TextColor="Black"/>
+                </VerticalStackLayout>
+
+            </Frame>
+        
+        
+           
+                <!-- Adultos / crianças -->
+                <Frame HorizontalOptions="Center" Margin="15" Padding="15">
+                <HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Adultos:  "/>
+                        <Label Text="2" BindingContext="{StaticResource Primary}"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="   Crianças: "/>
+                        <Label Text="2" BindingContext="{StaticResource Primary}"/>
+                    </HorizontalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+                <!-- CHek-in / CHek-out -->
+            <Frame VerticalOptions="CenterAndExpand" Margin="10" Padding="20">
+
+                <Grid ColumnDefinitions="*, *, *"
+                      RowDefinitions="Auto, Auto">
+                
+                    <Label HorizontalOptions="Start"
+                           Grid.Row="0" Grid.Column="0" Text="CHek-in "/>
+
+                    <Label HorizontalOptions="Center" 
+                           Grid.Row="0" Grid.Column="1" Text="CHek-out "/>
+
+                    <Label HorizontalOptions="End"
+                        Grid.Row="0" Grid.Column="2" Text="Estadia "/>
+
+                    <Label HorizontalOptions="Start" 
+                        Grid.Row="1" Grid.Column="0" Text="25/05/2024 "/>
+
+                    <Label HorizontalOptions="Center"
+                           Grid.Row="1" Grid.Column="1" Text=" 30/05/2024"/>
+
+                    <Label HorizontalOptions="End"
+                        Grid.Row="1" Grid.Column="2" Text="3 "/>
+                </Grid> 
             
-            <HorizontalStackLayout>
+            </Frame>
 
+            <!-- Total -->
+            <Frame HorizontalOptions="Center" Margin="15" Padding="15">
                 <HorizontalStackLayout>
-                    <Label Text="Adultos: "/>
-                    <Label Text="2" BindingContext="{StaticResource Primary}"/>
+                    <Label Text="Valor Total: "/>
+                    <Label Text=" R$ 750,00"/>
                 </HorizontalStackLayout>
-
-                <HorizontalStackLayout>
-                    <Label Text="Crianças: "/>
-                    <Label Text="2" BindingContext="{StaticResource Primary}"/>
-                </HorizontalStackLayout>
-
-            </HorizontalStackLayout>
-
-        </Frame>
-        <Frame
-            Margin="10">
-            <Grid ColumnDefinitions="*, *, *"
-                  RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="CHek-in: "/>
-                <Label Grid.Row="0" Grid.Column="1" Text="CHek-out: "/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia: "/>
-
-                <Label Grid.Row="1" Grid.Column="0" Text="25/05/2024 "/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="3 "/>
-            </Grid> 
-        </Frame>
-
-        <Frame
-            Margin="10">
-            <HorizontalStackLayout>
-                <Label Text="Valor Total: "/>
-                <Label Text=" R$ 750,00"/>
-            </HorizontalStackLayout>
-        </Frame>
-
-        <Button Text="Voltar" 
-                HorizontalOptions="Center"
-                Clicked="Button_Clicked"/>
-
-
+            </Frame>
+            
+            
+            
+            
+       
+            <!-- Voltar-->
+            <Button Margin="5" HorizontalOptions="Center"
+                    BackgroundColor="{StaticResource Gray300}"
+                    Text="Voltar"
+                    FontFamily="OpenSans-Semibold"
+                    TextColor="Black"
+                    Clicked="Button_Clicked"/>
+        
     </VerticalStackLayout>
 
-
-
+    </Grid>
 
 </ContentPage>
