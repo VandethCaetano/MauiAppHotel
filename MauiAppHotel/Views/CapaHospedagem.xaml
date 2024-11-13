@@ -10,22 +10,22 @@
         <!-- logo -->
         <Image
                Source="hotel.png"
-               HeightRequest="180"
+               HeightRequest="300"
                Aspect="AspectFit"
                SemanticProperties.Description="dot net bot in a race car number eight" />
 
         <!-- Frame 1 -->
-        <Frame Padding="10" Margin="15" BackgroundColor="{StaticResource PrimaryDark}">
-            
-                <VerticalStackLayout>
+        <Frame Padding="5" Margin="15" BackgroundColor="{StaticResource PrimaryDark}">
+
+            <VerticalStackLayout>
                 <Label 
-                      Text="Sobre o Aplicativo"
+                      Text="Caetano"
                       FontFamily="TheWanters"
                       FontSize="35"
                       TextColor="{StaticResource Black}"
                    
                       HorizontalOptions="Center"/>
-                
+
             </VerticalStackLayout>
         </Frame>
 
@@ -45,7 +45,7 @@
                         FontSize="20" 
                         HorizontalOptions="Center"/>
                 </VerticalStackLayout>
-                
+
                 <VerticalStackLayout>
                     <Label  
                         Text="Ano de Desenvolvimento" 
@@ -66,6 +66,9 @@
 
         <Button Text="Avançar" Clicked="Button_Clicked"/>
 
+
     </VerticalStackLayout>
+
+
 
 </ContentPage>

@@ -8,16 +8,9 @@ namespace MauiAppHotel.Views
         {
             InitializeComponent();
         }
-
-        // Evento para o botão "Avançar"
-        private async void OnNextButtonClicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            // Navega para a próxima página
-            await Navigation.PushAsync(new ProximaPagina());
+            Navigation.PushAsync(new ContratacaoHospedagem());
         }
-    }
-
-    internal class ProximaPagina : Page
-    {
     }
 }
