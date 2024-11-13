@@ -64,17 +64,7 @@
 
         <!-- Boton-->
 
-        <Button Padding="10" Margin="50" BackgroundColor="{StaticResource PrimaryDark}"
-        Text="Avançar"
-        FontFamily="BebasNeue-Regular"
-        TextColor="{StaticResource Black}"
-        FontSize="20"
-        Clicked="OnNextButtonClicked" />
-
-
-     
-
-
+        <Button Text="Avançar" Clicked="Button_Clicked"/>
 
     </VerticalStackLayout>
 
