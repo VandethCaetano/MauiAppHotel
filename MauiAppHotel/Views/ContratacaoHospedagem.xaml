@@ -14,18 +14,15 @@
         Opacity="1" />
 
         <VerticalStackLayout VerticalOptions="CenterAndExpand">
-            
-            <!-- Background fundo -->
+
+            <!-- Contratação-->
 
             <Frame BackgroundColor="{StaticResource Gray300}"
                    HorizontalOptions="Center" 
                    Margin="10" Padding="5" >    
-
-
-                
+   
                 <VerticalStackLayout HorizontalOptions="Center" Margin="1" Padding="5">
-                    
-                    <!-- Contratação-->
+                      
                     <Label 
                           Text="Contratação de Hospedagem"
                           FontFamily="TheWanters"
@@ -34,7 +31,7 @@
                 </VerticalStackLayout>
 
             </Frame>
-
+    
             <!-- Frame externo-->
             <Grid>
                 <Frame 
