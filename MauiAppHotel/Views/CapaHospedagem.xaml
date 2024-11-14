@@ -12,12 +12,8 @@
             Opacity="1" />
 
         <VerticalStackLayout VerticalOptions="CenterAndExpand">
-
-            <Frame BackgroundColor="{StaticResource Gray300}"
-       HorizontalOptions="Center" 
-       Margin="10" Padding="5" >
-
-                <!-- Frame Nome-->
+        
+            <!-- Frame Nome-->
 
             <Frame BackgroundColor="{StaticResource PrimaryDarkText}"
                    HorizontalOptions="Center" 

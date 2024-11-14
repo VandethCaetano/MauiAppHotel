@@ -22,9 +22,10 @@
                    Margin="10" Padding="5" >    
 
 
-                <!-- Contratação-->
+                
                 <VerticalStackLayout HorizontalOptions="Center" Margin="1" Padding="5">
-
+                    
+                    <!-- Contratação-->
                     <Label 
                           Text="Contratação de Hospedagem"
                           FontFamily="TheWanters"
@@ -61,14 +62,15 @@
                             <HorizontalStackLayout>
 
                                 <Grid
-                                    RowDefinitions="Auto, Auto" ColumnDefinitions=" *, *, 2*">
+                                    RowDefinitions="Auto, Auto"
+                                    ColumnDefinitions="*,*, *, 2*">
 
                                     <Label Grid.Row="0" Grid.Column="0"
                                            Text="  Adultos:  "
                                            FontFamily="OpenSans-Semibold"/>
 
                                     <Label Grid.Row="0" Grid.Column="1"
-                                        TextColor="{StaticResource Primary}"
+                                        TextColor="Brown"
                                         Text="{Binding Value }" 
                                         FontFamily="OpenSans-Semibold"
                                         BindingContext="{ x:Reference stp_adultos }"/>
@@ -92,7 +94,7 @@
                                            FontFamily="OpenSans-Semibold"/>
 
                                     <Label Grid.Row="1" Grid.Column="1"
-                                           TextColor="{StaticResource Primary}"
+                                           TextColor="Brown"
                                            FontFamily="OpenSans-Semibold"
                                            Text="{Binding Value }"  
                                            BindingContext="{ x:Reference stp_criancas  }"/>
@@ -157,6 +159,7 @@
                                 <DatePicker x:Name=" dtpck_checking"
                                             DateSelected="dtpck_cheking_DateSelected"
                                             Format=" dd/mm/yyyyy" 
+                                            TextColor="Brown"
                                             FontFamily="OpenSans-Semibold"/>
 
                             </HorizontalStackLayout>
@@ -168,6 +171,7 @@
                                 
                                 <DatePicker x:Name=" dtpck_checkout"
                                             Format=" dd/mm/yyyyy"
+                                            TextColor="Brown"
                                             FontFamily="OpenSans-Semibold"/>
                             </HorizontalStackLayout>
 
