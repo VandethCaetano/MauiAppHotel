@@ -9,74 +9,75 @@
     <Grid>
         <!-- Background fundo -->
         <Image VerticalOptions="CenterAndExpand"
-        Source="quarto.png" 
-        Aspect="AspectFit"
-        Opacity="1" />
+            Source="quarto.png" 
+            Aspect="AspectFit"
+            Opacity="1" />
+
+        <Frame 
+         WidthRequest="290" 
+         HeightRequest="700"
+         Opacity="0.5" >
+
+        </Frame>
 
         <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
             <!-- Contratação-->
-
             <Frame BackgroundColor="{StaticResource Gray300}"
-                   HorizontalOptions="Center" 
-                   Margin="10" Padding="5" >    
-   
+                       HorizontalOptions="Center" 
+                       Margin="10" Padding="5" >
+
                 <VerticalStackLayout HorizontalOptions="Center" Margin="1" Padding="5">
-                      
                     <Label 
-                          Text="Contratação de Hospedagem"
-                          FontFamily="TheWanters"
-                          FontSize="30"
-                          TextColor="Black"/>
+                              Text="Contratar Hospedagem"
+                              FontFamily="TheWanters"
+                              FontSize="30"
+                              Padding="5"
+                              TextColor="Black"/>
                 </VerticalStackLayout>
 
             </Frame>
-    
+
             <!-- Frame externo-->
             <Grid>
-                <Frame 
-                    WidthRequest="250" 
-                    HeightRequest="430"
-                    Opacity="0.5" 
-                    Margin="1" />
 
                 <VerticalStackLayout >
 
                     <!-- Selecione-->
                     <Label Margin="8" 
-                           HorizontalOptions="Center" 
-                           Text="Selecione" 
-                           FontAttributes="Bold"
-                           FontFamily="KalamLight"
-                           FontSize="20" 
-                           TextColor="Black"
-                           />
+                               HorizontalOptions="Center" 
+                               Text="Selecione" 
+                               FontAttributes="Bold"
+                               FontFamily="KalamLight"
+                               FontSize="20" 
+                               TextColor="Black"
+                               />
 
                     <Frame BackgroundColor="{StaticResource Gray100}"
-                        HorizontalOptions="Center" Padding="10">
+                            HorizontalOptions="Center" Padding="10">
                         <VerticalStackLayout>
 
                             <HorizontalStackLayout>
 
                                 <Grid
-                                    RowDefinitions="Auto, Auto"
-                                    ColumnDefinitions="*,*, *, 2*">
+                                        RowDefinitions="Auto, Auto"
+                                        ColumnDefinitions="*,*, *, 2*">
 
                                     <Label Grid.Row="0" Grid.Column="0"
-                                           Text="  Adultos:  "
-                                           FontFamily="OpenSans-Semibold"/>
+                                               Text="  Adultos:  "
+                                               FontFamily="OpenSans-Semibold"/>
 
                                     <Label Grid.Row="0" Grid.Column="1"
-                                        TextColor="Brown"
-                                        Text="{Binding Value }" 
-                                        FontFamily="OpenSans-Semibold"
-                                        BindingContext="{ x:Reference stp_adultos }"/>
+                                            TextColor="Brown"
+                                            Text="{Binding Value }" 
+                                            FontFamily="OpenSans-Semibold"
+                                            BindingContext="{ x:Reference stp_adultos }"/>
 
                                     <Stepper Grid.Row="0" Grid.Column="2"
-                                          x:Name="stp_adultos"
-                                          Minimum="0"
-                                          Maximum="10"
-                                          Increment="1"/>
+                                              x:Name="stp_adultos"
+                                              Minimum="0"
+                                              Maximum="10"
+                                              Increment="1"/>
                                 </Grid>
 
                             </HorizontalStackLayout>
@@ -84,23 +85,23 @@
                             <HorizontalStackLayout>
 
                                 <Grid
-                                    RowDefinitions="Auto, Auto" ColumnDefinitions=" *, *, 2*">
+                                        RowDefinitions="Auto, Auto" ColumnDefinitions=" *, *, 2*">
 
                                     <Label Grid.Row="1" Grid.Column="0"
-                                           Text="Crianças: "
-                                           FontFamily="OpenSans-Semibold"/>
+                                               Text="Crianças: "
+                                               FontFamily="OpenSans-Semibold"/>
 
                                     <Label Grid.Row="1" Grid.Column="1"
-                                           TextColor="Brown"
-                                           FontFamily="OpenSans-Semibold"
-                                           Text="{Binding Value }"  
-                                           BindingContext="{ x:Reference stp_criancas  }"/>
+                                               TextColor="Brown"
+                                               FontFamily="OpenSans-Semibold"
+                                               Text="{Binding Value }"  
+                                               BindingContext="{ x:Reference stp_criancas  }"/>
 
                                     <Stepper Grid.Row="1" Grid.Column="2"
-                                             x:Name="stp_criancas"
-                                             Minimum="0"
-                                             Maximum="10"
-                                             Increment="1"/>
+                                                 x:Name="stp_criancas"
+                                                 Minimum="0"
+                                                 Maximum="10"
+                                                 Increment="1"/>
 
                                 </Grid>
 
@@ -113,21 +114,21 @@
                     <!-- Acomodação-->
 
                     <Label Margin="8"
-                           HorizontalOptions="Center"
-                           Text="Escolha sua Suíte"   
-                           FontFamily="KalamLight"
-                           FontAttributes="Bold"
-                           FontSize="20" 
-                           TextColor="Black"
-                            />  
+                               HorizontalOptions="Center"
+                               Text="Escolha sua Suíte"   
+                               FontFamily="KalamLight"
+                               FontAttributes="Bold"
+                               FontSize="20" 
+                               TextColor="Black"
+                                />
 
                     <Frame  BackgroundColor="{StaticResource Gray100}"
-                        HorizontalOptions="Center" Padding="10">
+                            HorizontalOptions="Center" Padding="10">
 
                         <VerticalStackLayout>
 
                             <Picker x:Name="pck_quarto"
-                                    ItemDisplayBinding="{Binding Descricao}"/>
+                                        ItemDisplayBinding="{Binding Descricao}"/>
 
 
                         </VerticalStackLayout>
@@ -136,40 +137,40 @@
 
                     <!-- Estadia-->
                     <Label Margin="8"
-                           HorizontalOptions="Center"
-                           Text="Período de Estadia"
-                           FontFamily="KalamLight"
-                           FontAttributes="Bold"
-                           FontSize="20" 
-                           TextColor="Black"/> 
+                               HorizontalOptions="Center"
+                               Text="Período de Estadia"
+                               FontFamily="KalamLight"
+                               FontAttributes="Bold"
+                               FontSize="20" 
+                               TextColor="Black"/>
 
                     <Frame BackgroundColor="{StaticResource Gray100}"
-                        HorizontalOptions="Center" Padding="10">
+                            HorizontalOptions="Center" Padding="10">
 
                         <VerticalStackLayout>
 
                             <HorizontalStackLayout>
 
                                 <Label  Text="Check-in: "
-                                        FontFamily="OpenSans-Semibold"/>
+                                            FontFamily="OpenSans-Semibold"/>
 
                                 <DatePicker x:Name=" dtpck_checking"
-                                            DateSelected="dtpck_cheking_DateSelected"
-                                            Format=" dd/mm/yyyyy" 
-                                            TextColor="Brown"
-                                            FontFamily="OpenSans-Semibold"/>
+                                                DateSelected="dtpck_cheking_DateSelected"
+                                                Format=" dd/mm/yyyyy" 
+                                                TextColor="Brown"
+                                                FontFamily="OpenSans-Semibold"/>
 
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout>
 
                                 <Label  Text="Chek-out: "
-                                        FontFamily="OpenSans-Semibold"/>
-                                
-                                <DatePicker x:Name=" dtpck_checkout"
-                                            Format=" dd/mm/yyyyy"
-                                            TextColor="Brown"
                                             FontFamily="OpenSans-Semibold"/>
+
+                                <DatePicker x:Name=" dtpck_checkout"
+                                                Format=" dd/mm/yyyyy"
+                                                TextColor="Brown"
+                                                FontFamily="OpenSans-Semibold"/>
                             </HorizontalStackLayout>
 
                         </VerticalStackLayout>
@@ -182,12 +183,15 @@
             </Grid>
 
             <!-- Avança-->
-        <Button Margin="5" HorizontalOptions="Center"
-                BackgroundColor="{StaticResource Gray300}"
-                Text="Avançar"
-                FontFamily="OpenSans-Semibold"
-                TextColor="Black"
-                Clicked="Button_Clicked"/>
+            <Button BackgroundColor="{StaticResource Gray100}"   
+                            HorizontalOptions="Center"
+                            Margin="10"                       
+                            Text="🡆"
+                            FontSize="15"
+                            FontFamily="OpenSans-Semibold"
+                            TextColor="Black"
+                            Clicked="Button_Clicked">
+            </Button>
 
         </VerticalStackLayout>
 

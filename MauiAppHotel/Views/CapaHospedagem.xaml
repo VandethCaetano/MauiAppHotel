@@ -7,22 +7,22 @@
     <Grid>
         <!-- Background fundo -->
         <Image VerticalOptions="CenterAndExpand"
-            Source="ht_fachada.png" 
-            Aspect="AspectFit"
-            Opacity="1" />
+                Source="ht_fachada.png" 
+                Aspect="AspectFit"
+                Opacity="1" />
         <VerticalStackLayout VerticalOptions="CenterAndExpand">
             <VerticalStackLayout >
 
                 <!-- Frame Nome-->
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Frame BackgroundColor="{StaticResource PrimaryDarkText}"
-                           Margin="15" Padding="10" >
+                               Margin="15" Padding="10" >
 
                         <Label
-                              Text="Resort e Spa Caetano"
-                              FontFamily="TheWanters"
-                              FontSize="35"
-                              TextColor="{StaticResource White}">
+                                  Text="Resort e Spa  &#x0a;     Caetano"
+                                  FontFamily="TheWanters"
+                                  FontSize="39"
+                                  TextColor="{StaticResource White}">
                         </Label>
                     </Frame>
                 </HorizontalStackLayout>
@@ -30,32 +30,31 @@
                 <!-- Frame Slogan  -->
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Frame
-                          BackgroundColor="{StaticResource Gray100}"                     
-                          Margin="0" Padding="5" >
+                              BackgroundColor="{StaticResource Gray100}"                     
+                              Margin="0" Padding="5" >
 
                         <Label 
-                              Text="Refúgio, Sofisticação e Conforto."  
-                               FontFamily="KalamLight"
-                               FontSize="19"
-                               FontAttributes="Bold"
-                               TextColor="{StaticResource Black}">
+                                  Text="Refúgio, Sofisticação e Conforto."  
+                                   FontFamily="KalamLight"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="{StaticResource Black}">
                         </Label>
                     </Frame>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
 
             <!-- Boton-->
-            
-                <Button BackgroundColor="{StaticResource Gray300}"
-                        HorizontalOptions="Center"
-                        Margin="40"                    
-                        Text="Reserva"
-                        Opacity="35"
-                        FontFamily="OpenSans-Semibold"
-                        TextColor="Black"
-                        Clicked="Button_Clicked">
-                </Button>
-            
+            <Button BackgroundColor="{StaticResource Gray100}"   
+                            HorizontalOptions="Center"
+                            Margin="40"                       
+                            Text="Reserve 🡆"
+                            FontSize="13"
+                            FontFamily="OpenSans-Semibold"
+                            TextColor="Black"
+                            Clicked="Button_Clicked">
+            </Button>
+
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

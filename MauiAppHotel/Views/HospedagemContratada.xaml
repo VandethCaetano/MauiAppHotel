@@ -8,33 +8,31 @@
     <Grid>
         <!-- Background fundo -->
         <Image VerticalOptions="CenterAndExpand"
-               Source="cafe.png" 
-               Aspect="AspectFit"
-                Opacity="1" >
+                   Source="cafe.png" 
+                   Aspect="AspectFit"
+                   Opacity="1" >
         </Image>
 
         <!-- Frame externo-->
         <Frame 
-              WidthRequest="250" 
-              HeightRequest="420"
-              Opacity="0.5" 
-              Margin="1">
+                  WidthRequest="290" 
+                  HeightRequest="700"
+                  Opacity="0.5">
         </Frame>
 
         <VerticalStackLayout VerticalOptions="CenterAndExpand">
-
-
             <!-- Hospedagem Contratada-->
             <VerticalStackLayout HorizontalOptions="CenterAndExpand">
                 <Frame BackgroundColor="{StaticResource Gray300}"
-                       HorizontalOptions="Center" 
-                       Margin="25" Padding="5" >
+                           HorizontalOptions="Center" 
+                           Margin="25" Padding="5" >
 
                     <Label Text="Hospedagem Contratada"
-                           Margin="5" 
-                           FontFamily="TheWanters"
-                           FontSize="30"
-                           TextColor="Black">
+                               Margin="5" 
+                               FontFamily="TheWanters"
+                               FontSize="30"
+                               Padding="5"
+                               TextColor="Black">
                     </Label>
                 </Frame>
             </VerticalStackLayout>
@@ -43,36 +41,36 @@
             <VerticalStackLayout >
 
                 <Frame BackgroundColor="{StaticResource Gray100}"
-                       HorizontalOptions="Center"
-                       Padding="10" Margin="25">
+                           HorizontalOptions="Center"
+                           Padding="10" Margin="5">
 
                     <HorizontalStackLayout HorizontalOptions="Center" >
 
                         <HorizontalStackLayout >
                             <Label Text="Adultos:  "
-                                           FontFamily="OpenSans-Semibold"
-                                           FontSize="17" 
-                                           TextColor="Black">
-                            </Label>
-
-                            <Label Text=" 2" 
-                                           FontFamily="OpenSans-Semibold"
-                                           TextColor="Brown"
-                                           BindingContext="{StaticResource Primary}">
-                            </Label>
-                        </HorizontalStackLayout>
-
-                        <HorizontalStackLayout>
-                            <Label Text="   Crianças: "
                                                FontFamily="OpenSans-Semibold"
                                                FontSize="17" 
                                                TextColor="Black">
                             </Label>
 
+                            <Label Text=" 2" 
+                                               FontFamily="OpenSans-Semibold"
+                                               TextColor="Brown"
+                                               BindingContext="{StaticResource Primary}">
+                            </Label>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="   Crianças: "
+                                                   FontFamily="OpenSans-Semibold"
+                                                   FontSize="17" 
+                                                   TextColor="Black">
+                            </Label>
+
                             <Label Text=" 2"
-                                                FontFamily="OpenSans-Semibold"
-                                                TextColor="Brown"
-                                                BindingContext="{StaticResource Primary}">
+                                                    FontFamily="OpenSans-Semibold"
+                                                    TextColor="Brown"
+                                                    BindingContext="{StaticResource Primary}">
                             </Label>
                         </HorizontalStackLayout>
                     </HorizontalStackLayout>
@@ -84,41 +82,41 @@
             <VerticalStackLayout>
 
                 <Frame 
-                      BackgroundColor="{StaticResource Gray100}"
-                      HorizontalOptions="Center"
-                      Padding="10" Margin="25">
+                          BackgroundColor="{StaticResource Gray100}"
+                          HorizontalOptions="Center"
+                          Padding="10" Margin="25">
 
                     <HorizontalStackLayout HorizontalOptions="Center">
 
                         <Grid   
-                             ColumnDefinitions="*, *, *"
-                             RowDefinitions="Auto, Auto">
+                                 ColumnDefinitions="*, *, *"
+                                 RowDefinitions="Auto, Auto">
 
                             <!-- CHek-in -->
                             <Label 
-                                  Grid.Row="0" Grid.Column="0" 
-                                  Text="  CHek-in "
-                                  FontFamily="OpenSans-Semibold"
-                                  FontSize="17" />
+                                      Grid.Row="0" Grid.Column="0" 
+                                      Text="  CHek-in "
+                                      FontFamily="OpenSans-Semibold"
+                                      FontSize="17" />
 
                             <Label HorizontalOptions="Start" 
-                                   Grid.Row="1" Grid.Column="0"
-                                   TextColor="Brown"
-                                   Text="25/05/2024 "
-                                   FontFamily="OpenSans-Semibold"/>
+                                       Grid.Row="1" Grid.Column="0"
+                                       TextColor="Brown"
+                                       Text="25/05/2024 "
+                                       FontFamily="OpenSans-Semibold"/>
 
                             <!-- CHek-out -->
                             <Label 
-                                  Grid.Row="0" Grid.Column="3"
-                                  Text="     CHek-out "
-                                  FontFamily="OpenSans-Semibold"
-                                  FontSize="17" />
+                                      Grid.Row="0" Grid.Column="3"
+                                      Text="     CHek-out "
+                                      FontFamily="OpenSans-Semibold"
+                                      FontSize="17" />
 
                             <Label 
-                                  Grid.Row="1" Grid.Column="3"
-                                  Text="      30/05/2024"
-                                  TextColor="Brown"
-                                  FontFamily="OpenSans-Semibold"/>
+                                      Grid.Row="1" Grid.Column="3"
+                                      Text="      30/05/2024"
+                                      TextColor="Brown"
+                                      FontFamily="OpenSans-Semibold"/>
 
                         </Grid>
                     </HorizontalStackLayout>
@@ -129,27 +127,27 @@
             <VerticalStackLayout>
                 <!-- Estadia -->
                 <Frame BackgroundColor="{StaticResource Gray100}"
-                               HorizontalOptions="Center"
-                               Padding="10" Margin="25">
+                                   HorizontalOptions="Center"
+                                   Padding="10" Margin="25">
 
                     <HorizontalStackLayout HorizontalOptions="Center">
 
                         <Grid   
-                             ColumnDefinitions="*, *, *"
-                             RowDefinitions="Auto, Auto">
+                                 ColumnDefinitions="*, *, *"
+                                 RowDefinitions="Auto, Auto">
 
                             <!-- Estadia -->
                             <Label HorizontalOptions="Center"
-                                   Text="Estadia: "
-                                   Grid.Row="0" Grid.Column="0"
-                                   FontFamily="OpenSans-Semibold"
-                                   FontSize="17">
+                                       Text="Estadia: "
+                                       Grid.Row="0" Grid.Column="0"
+                                       FontFamily="OpenSans-Semibold"
+                                       FontSize="17">
                             </Label>
                             <Label HorizontalOptions="Center"
-                                   Text=" 3 "
-                                   Grid.Row="0" Grid.Column="1"
-                                   TextColor="Brown"
-                                   FontFamily="OpenSans-Semibold">
+                                       Text=" 3 "
+                                       Grid.Row="0" Grid.Column="1"
+                                       TextColor="Brown"
+                                       FontFamily="OpenSans-Semibold">
                             </Label>
                         </Grid>
                     </HorizontalStackLayout>
@@ -159,29 +157,31 @@
 
             <!-- Total -->
             <Frame BackgroundColor="{StaticResource Gray100}"
-                       HorizontalOptions="Center"
-                       Padding="10" Margin="35">
+                           HorizontalOptions="Center"
+                           Padding="10" Margin="35">
 
                 <HorizontalStackLayout>
                     <Label Text="Valor Total: "
-                               FontFamily="OpenSans-Semibold"
-                               FontSize="17">
+                                   FontFamily="OpenSans-Semibold"
+                                   FontSize="17">
                     </Label>
 
                     <Label Text=" R$ 750,00"
-                               TextColor="Brown"
-                               FontFamily="OpenSans-Semibold">
+                                   TextColor="Brown"
+                                   FontFamily="OpenSans-Semibold">
                     </Label>
                 </HorizontalStackLayout>
             </Frame>
 
             <!-- Voltar-->
-            <Button Margin="25" HorizontalOptions="Center"
-                    BackgroundColor="{StaticResource Gray300}"
-                    Text="Voltar"
-                    FontFamily="OpenSans-Semibold"
-                    TextColor="Black"
-                    Clicked="Button_Clicked">
+            <Button BackgroundColor="{StaticResource Gray100}"   
+            HorizontalOptions="Center"
+            Margin="5"                       
+            Text="🡄"
+            FontSize="15"
+            FontFamily="OpenSans-Semibold"
+            TextColor="Black"
+            Clicked="Button_Clicked">
             </Button>
 
         </VerticalStackLayout>
